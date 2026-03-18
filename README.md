@@ -54,7 +54,7 @@ This project presents a **unified neural network** that performs **rock segmenta
 | Jaszcz 2023 | 0.790 | — | 38 | 1 |
 | Silburt 2019 | — | 0.720 | 25 | 1 |
 | **Ours (Multi-Task)** | **0.730** | **0.697** | **60.1** | **2** |
-
+<img width="2886" height="892" alt="evaluation_results" src="https://github.com/user-attachments/assets/4bd0d3db-6f50-4eb9-be43-41a89ef54101" />
 > Our model achieves 87% of single-task rock performance and 97% of single-task crater performance — while doing **both simultaneously** and being the **fastest** model in the comparison.
 
 ### Training Curves

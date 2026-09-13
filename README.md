@@ -24,7 +24,7 @@ This project presents a **unified neural network** that performs **rock segmenta
 
 | # | Contribution | Impact |
 |---|---|---|
-| 1 | **SAM Auto-Labeling** | First lunar paper to use Meta's SAM for crater mask generation. Eliminated 83 hours of manual labeling — replaced with 90 seconds of automation. |
+| 1 | **SAM Auto-Labeling** | Used Meta's SAM to generate ~150 crater pixel masks from bounding-box labels, avoiding fully manual pixel annotation for that portion of the crater dataset. |
 | 2 | **Unified Multi-Task Architecture** | First model combining rock + crater segmentation in a single network. 50% memory saving over two separate models. |
 | 3 | **Alternating Batch Training** | Novel training strategy for partial-label multi-task learning — each dataset contributes to only its relevant decoder while updating the shared encoder. |
 
@@ -116,6 +116,7 @@ This project presents a **unified neural network** that performs **rock segmenta
 
 ---
 
+
 ## ✨ SAM Auto-Labeling Pipeline
 
 The crater dataset had only bounding boxes — not pixel masks. Manual annotation would take **83 hours**. We used Meta's **Segment Anything Model (SAM ViT-B)** to automate this:
@@ -135,7 +136,7 @@ Precise pixel mask (1=crater, 0=background)
 
 - **Model:** SAM ViT-B (`sam_vit_b_01ec64.pth`, pre-trained by Meta — not fine-tuned)
 - **Processing time:** 1 min 27 sec for all 143 images
-- **Output:** 1,034 crater masks generated automatically
+- **Output:** 143 crater masks generated automatically
 
 
 <p align="center">

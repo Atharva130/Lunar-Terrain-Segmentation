@@ -119,7 +119,7 @@ This project presents a **unified neural network** that performs **rock segmenta
 
 ## ✨ SAM Auto-Labeling Pipeline
 
-The crater dataset had only bounding boxes — not pixel masks. Manual annotation would take **83 hours**. We used Meta's **Segment Anything Model (SAM ViT-B)** to automate this:
+The crater dataset had only bounding boxes — not pixel masks. We used Meta's **Segment Anything Model (SAM ViT-B)** to automate this:
 
 ```
 YOLO Box: [xc=0.5, yc=0.3, w=0.2, h=0.15]
